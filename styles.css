@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 135, 49);
+  padding: 30px;
+  flex-direction: column;
+}
+
+.volleyball-court {
+  height: 600px;
+  width: 300px;
+  border: 5px solid white;
+  background-color: rgb(253, 104, 49);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opponent-court,
+.user-court {
+  height: 50%;
+  width: 100%;
+  /* Declare position relative so players can overlap over the court */
+  position: relative;
+}
+
+.volleyball-net {
+  border: 2px solid white;
+  width: 120%;
+}
+
+.user-court > .attack-line {
+  border-bottom: 5px solid white;
+  height: 35%;
+}
+
+/* Fix! this is not the attack line */
+.opponent-court > .attack-line {
+  border-bottom: 5px solid white;
+  height: 65%;
+}
+
+.service-line {
+  height: 15px;
+  width: 300px;
+  border-left: 5px dotted white;
+  border-right: 5px dotted white;
+}
+
+.user-players {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* declare top property to zero so the element starts its position on top */
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  height: 15%;
+  width: 15%;
+  background-color: rgb(26, 11, 193);
+  border-radius: 50%;
+}
+
+.opponent-players {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.opponent-players > .player {
+  background-color: rgb(162, 4, 141);
+}
