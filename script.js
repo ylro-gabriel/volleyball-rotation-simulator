@@ -4,6 +4,7 @@ const player2 = document.getElementById("player2");
 const player3 = document.getElementById("player3");
 const player4 = document.getElementById("player4");
 const player5 = document.getElementById("player5");
+const player6 = document.getElementById("player6");
 
 const position1 = [
   { right: "57px" }, //1st press
@@ -50,11 +51,21 @@ const position5 = [
   { right: "0px", bottom: "0px" }, //6th press
 ];
 
+const position6 = [
+  { right: "0px", bottom: "-111px" }, //1st press
+  { right: "57px", bottom: "-111px" }, //2nd press
+  { right: "114px", bottom: "-111px" }, //3rd press
+  { right: "114px", bottom: "0px" }, //4th press
+  { right: "57px", bottom: "0px" }, //5th press
+  { right: "0px", bottom: "0px" }, //6th press
+];
+
 let clickCount = 0;
 let clickCount2 = 0;
 let clickCount3 = 0;
 let clickCount4 = 0;
 let clickCount5 = 0;
+let clickCount6 = 0;
 
 button.addEventListener("click", () => {
   const nextTarget = position1[clickCount];
@@ -62,6 +73,7 @@ button.addEventListener("click", () => {
   const nextTarget3 = position3[clickCount3];
   const nextTarget4 = position4[clickCount4];
   const nextTarget5 = position5[clickCount5];
+  const nextTarget6 = position6[clickCount6];
 
   player1.style.right = nextTarget.right;
   player1.style.bottom = nextTarget.bottom;
@@ -78,11 +90,15 @@ button.addEventListener("click", () => {
   player5.style.right = nextTarget5.right;
   player5.style.bottom = nextTarget5.bottom;
 
+  player6.style.right = nextTarget6.right;
+  player6.style.bottom = nextTarget6.bottom;
+
   clickCount++;
   clickCount2++;
   clickCount3++;
   clickCount4++;
   clickCount5++;
+  clickCount6++;
 
   if (clickCount === position1.length) {
     clickCount = 0;
@@ -102,5 +118,9 @@ button.addEventListener("click", () => {
 
   if (clickCount5 === position5.length) {
     clickCount5 = 0;
+  }
+
+  if (clickCount6 === position6.length) {
+    clickCount6 = 0;
   }
 });
