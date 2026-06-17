@@ -9,21 +9,26 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  background: rgb(86, 158, 246);
 }
 
 h1 {
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 8px;
 }
 
 .main {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(49, 135, 49);
   padding: 30px;
-  flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   border-radius: 20px;
+  min-width: 50%;
 }
 
 .volleyball-court {
@@ -82,9 +87,10 @@ h1 {
 }
 
 .user-players .player:hover {
-  border: 2px solid red;
+  border: 2px solid navy;
   transform: scale(1.5);
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .player {
@@ -112,7 +118,7 @@ h1 {
 }
 
 .opponent-players > .player {
-  background-color: rgb(162, 4, 141);
+  background-color: purple;
 }
 
 #player1 {
@@ -149,4 +155,13 @@ h1 {
   height: 50px;
   width: 100px;
   margin: 5px;
+  border-radius: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+#moveBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  background-color: rgb(188, 192, 195);
 }

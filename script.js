@@ -127,6 +127,7 @@ button.addEventListener("click", () => {
 
 function changeColor(event) {
   event.target.style.backgroundColor = "blue";
+  event.target.style.color = "white";
 }
 
 player1.addEventListener("click", changeColor);
