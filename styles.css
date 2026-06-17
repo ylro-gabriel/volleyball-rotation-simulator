@@ -92,6 +92,11 @@ h1 {
   width: 15%;
   background-color: #fff;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
 .opponent-players {
