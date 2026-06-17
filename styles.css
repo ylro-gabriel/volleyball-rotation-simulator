@@ -81,6 +81,12 @@ h1 {
   justify-content: center;
 }
 
+.user-players .player:hover {
+  border: 2px solid red;
+  transform: scale(1.5);
+  transition: all 0.3s;
+}
+
 .player {
   height: 15%;
   width: 15%;
@@ -105,37 +111,31 @@ h1 {
 }
 
 #player1 {
-  border: 2px solid #000000;
   position: relative;
   transition: all 0.5s ease;
 }
 
 #player2 {
-  border: 2px solid;
   position: relative;
   transition: all 0.5s ease;
 }
 
 #player3 {
-  border: 2px solid;
   position: relative;
   transition: all 0.5s ease;
 }
 
 #player4 {
-  border: 2px solid;
   position: relative;
   transition: all 0.5s ease;
 }
 
 #player5 {
-  border: 2px solid;
   position: relative;
   transition: all 0.5s ease;
 }
 
 #player6 {
-  border: 2px solid;
   position: relative;
   transition: all 0.5s ease;
 }
