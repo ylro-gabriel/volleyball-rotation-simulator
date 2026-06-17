@@ -124,3 +124,14 @@ button.addEventListener("click", () => {
     clickCount6 = 0;
   }
 });
+
+function changeColor(event) {
+  event.target.style.backgroundColor = "blue";
+}
+
+player1.addEventListener("click", changeColor);
+player2.addEventListener("click", changeColor);
+player3.addEventListener("click", changeColor);
+player4.addEventListener("click", changeColor);
+player5.addEventListener("click", changeColor);
+player6.addEventListener("click", changeColor);
